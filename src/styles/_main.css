@@ -1,0 +1,32 @@
+section {
+	position: relative;
+
+	width: 16.88889rem;
+
+	padding-top: 3.89rem;
+
+	margin-bottom: 3.89rem;
+
+}
+
+.title {
+	line-height: normal;
+	margin-bottom: 1.11rem;
+}
+
+.section__content {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.section__content--tooltips {
+	flex-direction: column;
+	align-items: start;
+}
+
+.section__content--tooltips>* {
+	margin-bottom: 2.56rem;
+}

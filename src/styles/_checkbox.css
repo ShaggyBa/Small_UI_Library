@@ -1,0 +1,44 @@
+.checkbox {
+	display: inline-block;
+
+	margin: 1rem 0;
+	user-select: none;
+	white-space: nowrap;
+}
+
+.checkbox input {
+	display: none;
+}
+
+.checkbox input:checked~.checkbox__label::before {
+	content: url("/src/icons/bi_check.svg");
+	background-color: #001AFF;
+}
+
+.checkbox input:disabled~.checkbox__label::before {
+	opacity: .5;
+}
+
+.checkbox__label::before {
+	content: '';
+
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+
+	width: 25px;
+	height: 25px;
+
+	background-color: #23243E;
+
+	border-radius: 7px;
+
+	transition: all linear .2s;
+}
+
+.checkbox__label {
+	position: relative;
+	cursor: pointer;
+	padding-left: calc(25px + 1rem);
+}

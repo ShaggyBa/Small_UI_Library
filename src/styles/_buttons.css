@@ -1,0 +1,69 @@
+.btn {
+	display: inline-flex;
+	align-items: flex-start;
+	gap: 10px;
+
+	position: relative;
+	overflow: hidden;
+
+	padding: 7px 34px;
+
+	border: none;
+	border-radius: 10px;
+
+	background-color: #001AFF;
+	color: #fff;
+
+	-webkit-box-shadow: 4px 4px 16px 4px rgba(0, 26, 255, 0.2);
+	-moz-box-shadow: 4px 4px 16px 4px rgba(0, 26, 255, 0.2);
+	box-shadow: 4px 4px 16px 4px rgba(0, 26, 255, 0.2);
+
+	font-size: inherit;
+	font-family: inherit;
+
+	font-style: normal;
+	font-weight: 700;
+	cursor: pointer;
+
+	line-height: 27px;
+
+	transition: all linear .2s;
+}
+
+.btn:hover {
+	background-color: #0016D9;
+}
+
+.btn:active {
+	transform: translateY(-2px);
+}
+
+.btn--rounded {
+	border-radius: 400px;
+}
+
+.btn.wave-button::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.5);
+	opacity: 0;
+	pointer-events: none;
+	transition: width 0.3s ease-out, height 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.btn.wave-button:active {
+	transform: scale(0.95);
+}
+
+/* Если вы хотите, чтобы анимация происходила при клике, а не при наведении */
+.btn.wave-button:active::after {
+	width: 200px;
+	height: 200px;
+	opacity: 1;
+}

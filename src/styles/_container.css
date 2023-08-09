@@ -1,0 +1,12 @@
+.container {
+	/* Base styles */
+	max-width: 65rem;
+	padding: 0 1rem;
+	margin: 0 auto 3.89rem auto;
+
+
+	/* Custom styles */
+	display: grid;
+	grid-template-columns: 15rem 1fr;
+	grid-gap: 1.666rem;
+}

@@ -1,0 +1,30 @@
+.navbar {
+	position: sticky;
+	top: 3.89rem;
+
+	width: 15rem;
+	border-radius: 1.11111rem;
+	border: 1px solid #23243E;
+	background: #16182D;
+}
+
+.navbar ul {
+	padding: 1.67rem 0 1.67rem 2.67rem;
+
+}
+
+.navbar__link {
+	list-style: decimal;
+	margin-bottom: 0.56rem;
+	font-size: 1rem;
+	line-height: normal;
+	transition: color ease-in .15s;
+}
+
+.navbar__link:last-child {
+	margin-bottom: 0;
+}
+
+.navbar__link:hover {
+	color: #F73164;
+}
