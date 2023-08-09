@@ -11,7 +11,7 @@
 }
 
 .checkbox input:checked~.checkbox__label::before {
-	content: url("./src/icons/bi_check.svg");
+	content: url("./icons/bi_check.svg");
 	background-color: #001AFF;
 }
 
