@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="src/styles/_buttons.css">
+	<link rel="stylesheet" href="src/styles/_checkbox.css">
+	<link rel="stylesheet" href="src/styles/_container.css">
+	<link rel="stylesheet" href="src/styles/_dropdown__menu.css">
+	<link rel="stylesheet" href="src/styles/_main.css">
+	<link rel="stylesheet" href="src/styles/_navbar.css">
+	<link rel="stylesheet" href="src/styles/_reset.css">
+	<link rel="stylesheet" href="src/styles/_section.css">
+	<link rel="stylesheet" href="src/styles/_switch.css">
+	<link rel="stylesheet" href="src/styles/_tooltips.css">
+
+	<title>Smallest UI Library</title>
+</head>
+
+<body>
+
+	<div class="container">
+		<div>
+			<nav class="navbar">
+
+				<ul>
+					<li class="navbar__link"><a href="#buttons">Buttons</a></li>
+					<li class="navbar__link"><a href="#tooltips">Tooltips</a></li>
+					<li class="navbar__link"><a href="#dropdown">Dropdown menu</a></li>
+					<li class="navbar__link"><a href="#checkbox">Checkbox, switch</a></li>
+					<li class="navbar__link"><a href="#inputs">Inputs</a></li>
+					<li class="navbar__link"><a href="#menubar">Menu Bar</a></li>
+					<li class="navbar__link"><a href="#modal">Modal windows</a></li>
+					<li class="navbar__link"><a href="#cards">Cards</a></li>
+				</ul>
+			</nav>
+		</div>
+		<main class="content">
+			<section id="buttons">
+				<h2 class="title">1. Buttons</h2>
+
+				<div class="section__content">
+					<button class="btn wave-button btn">Button</button>
+					<button class="btn wave-button btn--rounded">Button</button>
+				</div>
+			</section>
+
+			<section id="tooltips">
+				<h2 class="title">2. Tooltips</h2>
+
+				<div class="section__content section__content--tooltips">
+					<span class="tooltip" data-tooltip="This is the text in the tooltip on the right">
+						Base tooltip
+					</span>
+
+					<span class="tooltip--left" data-tooltip="This is the text in the tooltip on the left">
+						Left tooltip
+					</span>
+
+					<span class="tooltip--bottom" data-tooltip="This is the text in the tooltip on the bottom">
+						Bottom tooltip
+					</span>
+
+					<span class="tooltip--top" data-tooltip="This is the text in the tooltip on the top">
+						Top tooltip
+					</span>
+				</div>
+			</section>
+
+			<section id="dropdown">
+				<h2 class="title">3. Dropdown menu</h2>
+
+				<div class="dropdown__menu">
+					<p class="dropdown__menu--title">Dropdown menu</p>
+					<ul>
+						<li class="dropdown__menu--item"><a href="#">Element 1</a></li>
+						<li class="dropdown__menu--item"><a href="#">Element 2</a></li>
+						<li class="dropdown__menu--item"><a href="#">Element 3</a></li>
+					</ul>
+				</div>
+
+			</section>
+
+			<section id="checkbox">
+				<h2 class="title">4. Checkbox, switch</h2>
+
+				<div class="section__content section__content--checkbox">
+
+					<div class="switch">
+						<input type="checkbox" name="switch1" id="switch1">
+						<label class="switch__label" for="switch1"">Свитч, который не определился</label>
+					</div>
+
+					<div class=" switch">
+							<input type="checkbox" name="switch2" id="switch2" checked>
+							<label class="switch__label" for="switch2"">Свитч, который согласился</label>
+					</div>
+
+					<div class=" switch">
+								<input type="checkbox" name="switch3" id="switch3" checked disabled>
+								<label class="switch__label" for="switch3"">Свитч, который согласился и его не оспоришь</label>
+					</div>
+
+
+					<div class=" checkbox">
+									<input type="checkbox" name="check1" id="check1">
+									<label class="checkbox__label" for="check1"">Чекбокс, который не определился</label>
+					</div>
+
+					<div class=" checkbox">
+										<input type="checkbox" name="check2" id="check2" checked>
+										<label class="checkbox__label" for="check2"">Чекбокс, который согласился</label>
+					</div>
+
+					<div class=" checkbox">
+											<input type="checkbox" name="check3" id="check3" disabled>
+											<label class="checkbox__label" for="check3">Чекбокс, который не согласился и
+												его не оспоришь</label>
+					</div>
+
+				</div>
+			</section>
+
+			<section id="inputs">
+				<h2 class="title">5. Inputs</h2>
+
+				<div class="content__buttons">
+					<button class="btn btn-base">Button</button>
+					<button class="btn btn-rounded">Button</button>
+				</div>
+			</section>
+
+			<section id="menubar">
+				<h2 class="title">6. Site menu</h2>
+
+				<div class="content__buttons">
+					<button class="btn btn-base">Button</button>
+					<button class="btn btn-rounded">Button</button>
+				</div>
+			</section>
+
+			<section id="modal">
+				<h2 class="title">7. Modal windows</h2>
+
+				<div class="content__buttons">
+					<button class="btn btn-base">Button</button>
+					<button class="btn btn-rounded">Button</button>
+				</div>
+			</section>
+
+			<section id="cards">
+				<h2 class="title">8. Cards </h2>
+
+				<div class="content__buttons">
+					<button class="btn btn-base">Button</button>
+					<button class="btn btn-rounded">Button</button>
+				</div>
+			</section>
+		</main>
+		<footer></footer>
+	</div>
+
+	<script src="src/scripts/_dropdown__menu.js"></script>
+</body>
+
+</html>
