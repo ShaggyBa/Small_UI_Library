@@ -8,8 +8,10 @@ dropdownMenuTitle.addEventListener('click', (e) => {
 })
 
 const modal = document.querySelector('.modal')
-const modalButton = document.querySelector('.modal__button');
 const modalOverlay = document.querySelector('.modal__overlay')
+
+const modalBtnClose = document.querySelector('.modal__window__btn--close')
+const modalButton = document.querySelector('.modal__button');
 
 modalButton.addEventListener('click', (e) => {
 	e.preventDefault()
@@ -17,15 +19,18 @@ modalButton.addEventListener('click', (e) => {
 
 })
 
+modalBtnClose.addEventListener('click', (e) => {
+	e.preventDefault()
+	modal.classList.remove('modal--active')
+})
+
 
 document.addEventListener('click', (e) => {
-	if (modal.classList.contains('.modal--active') && modalOverlay.contains(e.target))
-		console.log('lol')
-	modal.classList.remove('modal--active');
+	if (modal.classList.contains('modal--active') && modalOverlay.contains(e.target))
+		modal.classList.remove('modal--active');
 
-	if (dropdownMenu.classList.contains('dropdown__menu--active'))
-		if (!dropdownMenu.contains(e.target))
-			dropdownMenu.classList.remove('dropdown__menu--active');
+	if (dropdownMenu.classList.contains('dropdown__menu--active') && !dropdownMenu.contains(e.target))
+		dropdownMenu.classList.remove('dropdown__menu--active');
 
 });
 
