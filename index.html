@@ -5,6 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<title>Smallest UI Library</title>
+
 	<link rel="stylesheet" href="src/styles/buttons.css" type="text/css">
 	<link rel="stylesheet" href="src/styles/checkbox.css" type="text/css">
 	<link rel="stylesheet" href="src/styles/container.css" type="text/css">
@@ -15,8 +17,11 @@
 	<link rel="stylesheet" href="src/styles/section.css" type="text/css">
 	<link rel="stylesheet" href="src/styles/switch.css" type="text/css">
 	<link rel="stylesheet" href="src/styles/tooltips.css" type="text/css">
+	<link rel="stylesheet" href="src/styles/input.css" type="text/css">
+	<link rel="stylesheet" href="src/styles/menubar.css" type="text/css">
+	<link rel="stylesheet" href="src/styles/modal.css" type="text/css">
 
-	<title>Smallest UI Library</title>
+	<script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 </head>
 
 <body>
@@ -41,7 +46,7 @@
 			<section id="buttons">
 				<h2 class="title">1. Buttons</h2>
 
-				<div class="section__content">
+				<div class="section__content section__content--buttons">
 					<button class="btn wave-button btn">Button</button>
 					<button class="btn wave-button btn--rounded">Button</button>
 				</div>
@@ -51,21 +56,29 @@
 				<h2 class="title">2. Tooltips</h2>
 
 				<div class="section__content section__content--tooltips">
-					<span class="tooltip" data-tooltip="This is the text in the tooltip on the right">
-						Base tooltip
-					</span>
 
-					<span class="tooltip--left" data-tooltip="This is the text in the tooltip on the left">
-						Left tooltip
-					</span>
+					<div>
+						<span class="tooltip" data-tooltip="This is the text in the tooltip on the right">
+							Base tooltip
+						</span>
+					</div>
 
-					<span class="tooltip--bottom" data-tooltip="This is the text in the tooltip on the bottom">
-						Bottom tooltip
-					</span>
+					<div>
+						<span class="tooltip--left" data-tooltip="This is the text in the tooltip on the left">
+							Left tooltip
+						</span>
+					</div>
 
-					<span class="tooltip--top" data-tooltip="This is the text in the tooltip on the top">
-						Top tooltip
-					</span>
+					<div>
+						<span class="tooltip--bottom" data-tooltip="This is the text in the tooltip on the bottom">
+							Bottom tooltip
+						</span>
+					</div>
+					<div>
+						<span class="tooltip--top" data-tooltip="This is the text in the tooltip on the top">
+							Top tooltip
+						</span>
+					</div>
 				</div>
 			</section>
 
@@ -126,27 +139,61 @@
 			<section id="inputs">
 				<h2 class="title">5. Inputs</h2>
 
-				<div class="content__buttons">
-					<button class="btn btn-base">Button</button>
-					<button class="btn btn-rounded">Button</button>
+				<div class="section__content section__content--input">
+					<div class="field__input">
+						<input class="field__control" type="text" name="username" id="search" placeholder="Write your name">
+					</div>
+					<div class="field__input">
+						<span class="iconify field__icon" data-icon="akar-icons:search"></span>
+						<input class="field__control" type="search" name="search" id="search" placeholder="Search...">
+					</div>
+
 				</div>
 			</section>
 
 			<section id="menubar">
 				<h2 class="title">6. Site menu</h2>
 
-				<div class="content__buttons">
-					<button class="btn btn-base">Button</button>
-					<button class="btn btn-rounded">Button</button>
+				<div class="section__content">
+
+					<nav class="menubar menubar--dark">
+						<a href="" class="menubar__logo">Logo</a>
+						<ul>
+							<li class="menubar__item"><a class="menubar__item--link" href="">Section 1</a></li>
+							<li class="menubar__item"><a class="menubar__item--link" href="">Section 2</a></li>
+							<li class="menubar__item"><a class="menubar__item--link" href="">Section 3</a></li>
+							<li class="menubar__item"><a class="menubar__item--link" href="">Section 4</a></li>
+							<li class="menubar__item"><a class="menubar__item--link" href="">Section 5</a></li>
+						</ul>
+					</nav>
+
+					<nav class="menubar menubar--light">
+						<a href="" class="menubar__logo">Logo</a>
+						<ul>
+							<li class="menubar__item"><a class="menubar__item--link" href="">Section 1</a></li>
+							<li class="menubar__item"><a class="menubar__item--link" href="">Section 2</a></li>
+							<li class="menubar__item"><a class="menubar__item--link" href="">Section 3</a></li>
+							<li class="menubar__item"><a class="menubar__item--link" href="">Section 4</a></li>
+							<li class="menubar__item"><a class="menubar__item--link" href="">Section 5</a></li>
+						</ul>
+					</nav>
+
 				</div>
 			</section>
 
 			<section id="modal">
 				<h2 class="title">7. Modal windows</h2>
 
-				<div class="content__buttons">
-					<button class="btn btn-base">Button</button>
-					<button class="btn btn-rounded">Button</button>
+				<div class="modal">
+					<button class="btn--base modal__button">Open modal</button>
+					<div class="modal__window modal__window--active">
+						<div class="modal__window__title">
+							<p>Modal window title</p>
+						</div>
+						<div class="modal__window__content">
+							<p>Modal window content</p>
+						</div>
+					</div>
 				</div>
 			</section>
 
@@ -163,6 +210,7 @@
 	</div>
 
 	<script src="src/scripts/dropdown__menu.js"></script>
+	<script src="src/scripts/modal.js"></script>
 </body>
 
 </html>

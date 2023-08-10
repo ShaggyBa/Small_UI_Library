@@ -1,0 +1,24 @@
+section {
+	position: relative;
+
+
+	padding-top: 3.89rem;
+
+	margin-bottom: 3.89rem;
+
+}
+
+.section__content {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 100%;
+}
+
+.section__content--buttons {
+	flex-direction: row;
+}
+
+.section__content--tooltips>* {
+	margin-bottom: 2.56rem;
+}
