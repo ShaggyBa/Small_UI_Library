@@ -1,0 +1,17 @@
+{
+	"name": "small_ui_library",
+	"version": "1.0.0",
+	"description": "UI library for basics practices",
+	"main": "index.html",
+	"git-repository": "https://github.com/ShaggyBa/small_ui_library.git",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"UI",
+		"UI_library",
+		"UILibrary"
+	],
+	"author": "ShaggyBa",
+	"license": "ISC"
+}

@@ -184,16 +184,22 @@
 			<section id="modal">
 				<h2 class="title">7. Modal windows</h2>
 
+				<button class="btn--base modal__button">Open modal</button>
+
 				<div class="modal">
-					<button class="btn--base modal__button">Open modal</button>
-					<div class="modal__window modal__window--active">
-						<div class="modal__window__title">
+					<div class="modal__window">
+						<button class="modal__window__btn--close">
+							<span class="iconify" data-icon="eva:close-outline"></span>
+						</button>
+						<div class="modal__window--title">
 							<p>Modal window title</p>
 						</div>
-						<div class="modal__window__content">
-							<p>Modal window content</p>
+						<div class="modal__body">
+							<span class="modal__body--label">Modal window content</span>
 						</div>
 					</div>
+
+					<div class="modal__overlay"></div>
 				</div>
 			</section>
 
@@ -209,8 +215,7 @@
 		<footer></footer>
 	</div>
 
-	<script src="src/scripts/dropdown__menu.js"></script>
-	<script src="src/scripts/modal.js"></script>
+	<script src="src/scripts/main.js"></script>
 </body>
 
 </html>
