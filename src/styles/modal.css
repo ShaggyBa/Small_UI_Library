@@ -97,7 +97,7 @@
 	transition: color .2s ease-in;
 }
 
-.modal__window--close:hover {
+.modal__window__btn--close :hover {
 	color: #fff;
 }
 
